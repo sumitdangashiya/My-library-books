@@ -1,0 +1,34 @@
+/*rating css*/
+.book-star-rating-wrap {
+	margin-top: 10px;
+}
+.book-star-rating {
+	height: 16px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	font-size: 16px;
+	width: 90px;
+	line-height: 1;
+}
+.book-star-rating::before ,
+.book-star-rating span::before {
+	content: "\f005 \f005 \f005 \f005 \f005";
+	color: #009BEF;
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.book-star-rating span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	height: 100%;
+}
+.book-star-rating span::before {
+	font-weight: bold;
+	width: 90px;
+}
